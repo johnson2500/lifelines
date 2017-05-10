@@ -1,0 +1,182 @@
+/* Main Tags*/
+
+body{
+	background-color: white;
+	font-size: 1em;
+}
+
+p{
+	color: darkslategrey;
+}
+
+section{
+	color: black;
+}
+
+a{
+	margin-bottom: 0px;
+	font-size: auto;
+}
+.center {
+	text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+	text-align: center;
+	color: black;
+	padding-bottom: 0px;
+}
+
+li,a,i,ul{
+  font-size: 1em;
+  font: bold;
+	padding-top: .5em;
+	padding-bottom: -1em;
+}
+
+
+textarea{
+	resize: none;
+	height: 5em;
+}
+
+img{
+	padding-top: 0em;
+	width: auto;
+	text-align: center;
+}
+
+/* ID Tags*/
+
+#titleBar{
+    text-align: center;
+    background: lightgrey;
+    font: bold;
+    padding: 1em;
+    border: .1 em solid black;
+}
+
+
+#emailField, #passwordField,#firstNameField,#lastNameField{
+    text-align: inherit;
+    padding: 1em;
+}
+
+#passwordBox{
+    height:100%;
+    width: 100%;
+    padding: .1em;
+}
+
+#encTitle{
+	text-align: center;
+	color: black;
+}
+#wrap{
+    width:auto;    
+    height:10%;
+    background:white;   
+    position:relative;  
+		z-index: 1;
+}
+#bottomnav{
+    width:100%;
+    height:auto;
+    background:lightgrey;
+    position:fixed;
+		bottom: 0%;
+		padding-right:2em;
+		z-index: 1;
+
+}
+#bottomnav ul{
+    list-style:none;
+    display:block;
+    width:100%;
+		z-index: 1;
+
+}
+#bottomnav li{
+  width:20%;
+	float:left;
+	align-content:center;
+  text-align:center;
+	font-size: .4em;
+		z-index: 1;
+
+}
+#responseSec, #loadMoreButton, #encSec{
+	margin-bottom: 20%;
+	padding-bottom: 20%;
+	z-index: 0;
+
+}
+
+#comments {
+	background-color: white;
+}
+
+
+#settingArea{
+	margin-bottom: 10em;
+}
+/* Class Tags*/
+.bottomIcon {
+	height: 4em;
+}
+
+
+.textarea{
+	align-content: center;
+	align-self: center;
+}
+
+.right{
+	float: right;
+}
+
+.white{
+	background: white;
+}
+
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
+.popup {
+	position: absolute;
+	height: 250px;
+	top: 40%;
+	left: 15%;
+	z-index: 2;
+	width: 70%;
+	background: white;
+	border: 1px solid black;
+	height: auto;
+	border-radius: 10px;
+	overflow: hidden;
+}
+			
+#popUpText{
+	margin: 2%;
+}
+
+ .responseButtons{
+	width: 100%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background: white;
+	color: lightblue;
+	border-top: 1px solid black;
+}
+
+.blue-text {
+	color: lightblue;
+}

@@ -1,0 +1,431 @@
+<!--
+Created by Ryan Johnson 
+Owned by Gap Fox
+Date September 7th, 2016
+-->
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+	
+<body> 
+	<div id="signIn" data-role="page">
+		<div data-role="header" data-theme="c">
+			<h1>Life Lines</h1>
+			<a href="#settings" data-theme="c" data-role="button" data-icon="gear" class="ui-btn-right">Settings</a>
+		</div><!-- /header -->
+		<h2>Sign In</h2>
+				<div class="row">
+		</div>
+		<div class="row">
+			<div class="small-6 column">
+				<p>User Name :</p>
+			</div>
+			<div class="small-6 column">
+				<input id="signInUserName" type="text" placeholder="Enter User name">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="small-6 column">
+				<p>Password :</p>
+			</div>
+			<div class="small-6 column">
+				<input id="signInPassword" type="text" placeholder="Enter Password">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="small-6 column">
+				<p></p>
+			</div>
+			<div class="small-6 column">
+				<button id = "signInButton" class="small button">Submit</button>
+			</div>
+		</div>
+	</div>
+<!--Life lines Home-->
+	<div id="lifelines" data-role="page">
+		<div data-role="header" data-theme="c">
+			<h1>Life Lines</h1>
+			<a href="#settings" data-role="button" data-icon="gear" class="ui-btn-right">Settings</a>
+		</div>
+			 <!-- start of title -->
+    <div class="small-12 columns">
+			<div>
+				<h4 id="encTitle">Life Lines</h4>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="small-12 center">
+				<h6><img src="imgs/lifeline.png"></h6>
+			</div>
+		</div>
+
+    <!-- Start of comment area -->
+
+		<div class="row">
+			<div class="small-12 columns">
+				<h6>My Life Lines:</h6>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="small-2 column"><p></p></div>
+			<div class="small-8 column">
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+			</div>
+			<div class="small-2 column"><p></p></div>
+		</div>
+		
+		<!--Start of life lines-->
+		<div class="row">
+			<div class="small-12 columns">
+				<h6>Answered Life-Lines:</h6>
+			</div>
+		</div>
+		
+		<div class="row" id="lifeLineSec">
+			<div class="small-2 column"><p></p></div>
+			<div class="small-8 column">
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+			</div>
+			<div class="small-2 column"><p></p></div>
+		</div>
+			
+		<div id="bottomnav">
+			<ul>
+				<li>
+					<a href="#lifelines">
+						<img id="ring" src="imgs/lifeline.png">
+						<br>
+						<section class="size-14">Life Lines</section>
+					</a>
+				</li>
+				<li>
+					<a href="#encouragement">
+						<img id="anchor" src="imgs/anchor.png">
+						<br>
+						<section class="size-14">Encouragement</section>
+					</a>
+				</li>
+				<li>
+					<a href="#community">
+						<img src="imgs/sailboat.png">
+						<br>
+						<section class="size-14">Community</section>
+					</a>
+				</li>	
+			</ul>
+		</div>
+	</div>
+<!-- Comminty page-->
+	<div id="community" data-role="page">
+		<div data-role="header" data-position="fixed" data-theme="c">
+			<h1>Life Lines</h1>
+			<a href="#settings" data-theme="c" data-role="button" data-icon="gear" class="ui-btn-right">Settings</a>
+			<!-- start of title -->
+		</div>
+    <div class="small-12 columns">
+			<div >
+				<h4 id="encTitle">Community</h4>
+			</div>
+		</div>
+    <!-- End of title -->
+		<div class="row">
+			<div class="small-12 center">
+				<h6><img src="imgs/sailboat.png" id = "sailboat"></h6>
+			</div>
+		</div>
+    <!-- End of title -->
+
+	
+		<!--Start of Community Posts-->
+		<div class="row">
+			<div class="small-12 columns">
+				<h6>Community Posts:</h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-2 column"><p></p></div>
+			<div id="commentSec" class="small-8 column">
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+				<h7>Fake Data -- </h7>
+				<p>sure</p>
+			</div>
+			<div class="small-2 column"><p></p></div>
+		</div>
+	
+		<!-- Load more button -->
+		<div class="row">
+			<div class="small-2 columns"><p></p></div>
+			<div class="small-8 columns">
+				<button id="loadMoreButton" class= "button small-8 columns">Load More</button>
+			</div>
+			<div class="small-2 columns"><p></p></div>
+		</div>
+		<!-- Load more button -->
+		
+		<!-- Bottome Navigation		-->
+		<div id="bottomnav">
+    	<ul>
+				<li>
+					<a href="#lifelines">
+						<img id="ring" src="imgs/lifeline.png">
+						<br>
+						<section class="size-14">Life Lines</section>
+					</a>
+				</li>
+        <li>
+					<a href="#encouragement">
+						<img id="anchor" src="imgs/anchor.png">
+						<br>
+						<section class="size-14">Encouragement</section>
+					</a>
+				</li>
+				<li>
+					<a href="#community">
+						<img src="imgs/sailboat.png">
+						<br>
+						<section class="size-14">Community</section>
+					</a>
+				</li>
+			</ul>
+	</div>
+</div>
+<!-- Encouragment page -->
+	<div id="encouragement" data-role="page">
+		
+		<div data-role="header" data-theme="c">
+			<h1>Life Lines</h1>
+			<a href="#settings" data-theme="c" data-role="button" data-icon="gear" class="ui-btn-right">Settings</a>
+		</div><!-- /header -->
+
+    <!-- start of title -->
+    <div class="small-12 columns">
+			<div>
+				<h4 id="encTitle">Encouragment<br><img src="imgs/anchor.png"></h4>
+			</div>
+		</div>
+    <!-- End of title -->
+
+    <!-- Start of comment area -->
+		<div class="row">
+			<div class="small-2 column"><p><!--- --></p></div>
+			<div class="small-8 column comment-box">
+			<form class="align-center comment-box">
+				<textarea id="commentText" class="align-center comment-box" placeholder="Send a Life Line!"></textarea>
+			</form>
+			</div>
+			<div class="small-2 column"><!-- --></div>
+		</div>
+		
+		<div class="row">
+			<div class="small-2 columns"><p></p></div>
+			<div class="small-4 columns">
+				<div id="sendButton" data-role="button" class="ui-btn-left">
+					<img src="imgs/lifeline.png">
+					<h6>Send</h6>	
+				</div>
+			</div>
+			<div class="small-4 columns">
+				<div class="ui-field-contain" id="friendChoice">
+					<select id ="friendList" name="select-custom-2" data-native-menu="false" data-mini="true">
+						<option id = "addFriend">Add Friends</option>
+					</select>
+				</div>
+			</div>
+			<div class="small-2 columns"><p></p></div>
+		</div>
+		<!--- comment area -->
+		
+		
+		<!-- title for my life lines-->
+		<div class="row">
+			<div class="small-12 columns">
+				<h6>My Life Lines:</h6>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="small-2 column"><p></p></div>
+			<div id = "myLifeLines" class="small-8 column">
+			</div>
+			<div class="small-2 column"><p></p></div>
+		</div>
+		
+		<!--Start of life lines-->
+		<div class="row">
+			<div class="small-12 columns">
+				<h6>Answered Life-Lines:</h6>
+			</div>
+		</div>
+		<div id = "encSec" class="row">
+			<div class="small-2 column"><p></p></div>
+			<div id="answerLifeLines" class="small-8 column">
+				
+			</div>
+			<div class="small-2 column"><p></p></div>
+		</div>
+		
+		
+		<div id="bottomnav">
+    	<ul>
+				<li>
+					<a href="#lifelines">
+						<img id="ring" src="imgs/lifeline.png">
+						<br>
+						<section class="size-14">Life Lines</section>
+					</a>
+				</li>
+        <li>
+					<a href="#encouragement">
+						<img id="anchor" src="imgs/anchor.png">
+						<br>
+						<section class="size-14">Encouragement</section>
+					</a>
+				</li>
+				<li>
+					<a href="#community">
+						<img src="imgs/sailboat.png">
+						<br>
+						<section class="size-14">Community</section>
+					</a>
+				</li>
+			</ul>
+    </div>
+	</div>
+<!-- Settings page -->
+	<div id="settings" data-role="page">
+		<div data-role="header" data-theme="c">
+			<h1>Life Lines</h1>
+			<a href="#lifelines" data-theme="c" data-role="button" data-icon="arrow-l" class="ui-btn-left"><p></p></a>
+		</div><!-- /header -->
+		<section id="settingArea">
+			<div class="row">
+				<div class="small-2 columns"><p></p></div>
+				<div class="small-8 columns"><h3>Settings</h3></div>
+				<div class="small-2 columns"><p></p></div>
+			</div>
+			<div class="row">
+				<div class="small-12 columns">
+					<h3><img src="imgs/gear.png"></h3>
+				</div>
+			</div>
+			<div class="row">      
+				<div class="small-6 columns">
+					<p>Unique ID</p>
+				</div>      
+				<div class="small-6 columns">
+					<p> <input id ="settingsUI" placeholder="Unique ID"> </p>
+				</div>
+			</div>
+			<!--- Last name Field-->
+			<div class="row">      
+				<div class="small-6 columns">
+					<p>First Name</p>
+				</div>      
+				<div class="small-6 columns">
+					<p> <input id="settingsFN" placeholder="First Name"> </p>
+				</div>
+			</div>
+   <!--- Unique ID -->
+			<div class="row">      
+				<div class="small-6 columns">
+					<p>Last Name</p>
+				</div>  
+				<div class="small-6 columns">
+					<p> <input id="settingsLN" placeholder="Username"> </p>
+				</div>
+			</div>
+		<!--- Email Field-->
+			<div class="row">      
+				<div class="small-6 columns">
+					<p>Email</p>
+				</div>
+				<div class="small-6 columns">
+					<p> <input id="settingsE" placeholder="Email"> </p>
+				</div>
+			</div>
+			
+			<div class="row">      
+				<div class="small-6 columns">
+					<p>Date Joined:</p>
+				</div>
+				<div class="small-6 columns">
+					<p> <input id="dateJoined" placeholder="09/12/2015"> </p>
+				</div>
+			</div>
+
+			<div class="row">      
+				<div class="small-6 columns">
+					<p>Add Friends by User name:</p>
+				</div>
+				<div class="small-6 columns">
+					<p> <a href="#">Add Friends</a></p>
+				</div>
+			</div>
+		</section>
+		
+		<a href="#lifelines"></a>
+	</div>
+<!-- Sign in page -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="js/vendor/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="test.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

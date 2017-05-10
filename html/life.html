@@ -1,0 +1,526 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+	<link rel="stylesheet" href="../css/foundation.css">
+	<link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="https://cdn.apple-cloudkit.com/ck/1/cloudkit.js" async></script>
+	<script src="../js/foundation.min.js"></script>
+	<script src="../class.js"></script>
+	
+	<!-- Lifelines Page -->
+	
+	<div id="encPage" data-role ="page">
+		<div data-role="header" data-theme="c">
+			<h1>Encouragment</h1>
+		</div><!-- /header -->
+
+    <!-- start of title -->
+    <div class="small-12 columns">
+			<div>
+				<h4><img src="../imgs/anchor.png"></h4>
+			</div>
+		</div>
+    <!-- End of title -->
+    <!-- Start of comment area -->
+		<div class="row">
+			<div class="small-1 column"><p></p></div>
+			<div class="small-9 column comment-box">
+			<form class="align-center comment-box">
+				<textarea id="encCommentText" class="align-center comment-box" placeholder="Send a Life Line!"></textarea>
+			</form>
+			</div>
+			<div id="sendEnc" class="small-2 column"><img src="../imgs/lifeline.png"><br/>Send</div>
+		</div>
+		<!--- comment area -->
+		
+		
+		<!-- title for my life lines-->
+		<div id = "answeredLifeLines">
+
+		<div class="row">
+			<div class="small-1 columns"><p></p></div>
+			<div class="small-6 columns size-12">RESPONSES FROM FRIENDS:</div>
+			<a href="#sendTo" class="small-2 collums size-12">Send To</a> 
+		</div>
+		
+		</div>
+
+		<!--Start of life lines-->
+		<div class="row">
+			<div class="small-1 columns"><p></p></div>
+			<div class="small-11 columns size-12">
+				<br/>
+				UNANSWERED REQUESTS:
+			</div>
+		</div>
+		
+		<div id = "unansweredLifeLines"></div>
+		
+		<!-- Bottom Nave -->
+	<div id="bottomnav">
+			<ul>
+				<li>
+					<a href="#lifeLinesPage">
+						<img class="bottomIcon" id="ring" src="../imgs/lifeline.png">
+						<br>
+						<section>Life Lines</section>
+					</a>
+				</li>
+				<li>
+					<a href="#encPage">
+						<img class="bottomIcon" id="anchor" src="../imgs/anchor.png">
+						<br>
+						<section>Encouragment</section>
+					</a>
+				</li>
+				<li>
+					<a href="#comPage">
+						<img class="bottomIcon" src="../imgs/sailboat.png">
+						<br>
+						<section>Community</section>
+					</a>
+				</li>
+				<li>
+					<a href="#findFriendsPage">
+						<img class="bottomIcon" src="../imgs/Sailor-30x21px.png">
+						<br>
+						<section>Friends</section>
+					</a>
+				</li>
+				<li>
+					<a href="#settings">
+						<img class="bottomIcon" src="../imgs/gear.png">
+						<br>
+						<section>Settings</section>
+					</a>
+				</li>
+			</ul>
+			</div>
+		<script src="../js/enc.js"></script>
+		<script src="../class.js"></script>
+	</div>	
+	<!-- Encouragement Page -->
+	
+	<div id="comPage" data-role ="page">
+		<div data-role="header" data-position="fixed" data-theme="c">
+			<h1>Community</h1>
+		</div>
+							
+		<div class="row">
+			<div class="small-12 center">
+				<h6><img src="../imgs/sailboat.png" id = "sailboat"></h6>
+			</div>
+		</div>
+    <!-- End of title -->
+			
+		<div class="row">
+			<div class="small-12 column size-12">ENCOURAGING WORDS:</div>
+			<div class="small-2 column"><p></p></div>
+		</div>
+			
+		<div class="row">
+			<div class="small-10 column comment-box">
+				<form class="align-center comment-box">
+					<textarea id="CommunityText" class="align-center comment-box" placeholder="Send Encouraging Words"></textarea>
+				</form>
+			</div>
+			<div id="sendEncButton" class="small-2 column"><img src="../imgs/lifeline.png"><br/>Send</div>
+		</div>
+			
+			<div class="row">
+				<div class="small-12 column size-12">COMMUNITY ENCOURAGEMENT:</div>
+				<div class="small-2 column"><p></p></div>
+			</div>
+		
+		<div id="encCommentSec" class="row">
+			</div>
+		
+		<!-- Load more button -->
+		<div class="row">
+			<div class="small-12 columns">
+				<button id="loadMoreButton" class= "ui-button small-8 columns">Load More</button>
+			</div>
+		</div>
+		<!-- Load more button -->
+			
+				
+		<div id="bottomnav">
+			<ul>
+				<li>
+					<a href="#lifeLinesPage">
+						<img class="bottomIcon" id="ring" src="../imgs/lifeline.png">
+						<br>
+						<section>Life Lines</section>
+					</a>
+				</li>
+				<li>
+					<a href="#encPage">
+						<img class="bottomIcon" id="anchor" src="../imgs/anchor.png">
+						<br>
+						<section>Encouragment</section>
+					</a>
+				</li>
+				<li>
+					<a href="#comPage">
+						<img class="bottomIcon" src="../imgs/sailboat.png">
+						<br>
+						<section>Community</section>
+					</a>
+				</li>
+				<li>
+					<a href="#findFriendsPage">
+						<img class="bottomIcon" src="../imgs/Sailor-30x21px.png">
+						<br>
+						<section>Friends</section>
+					</a>
+				</li>
+				<li>
+					<a href="#settings">
+						<img class="bottomIcon" src="../imgs/gear.png">
+						<br>
+						<section>Settings</section>
+					</a>
+				</li>
+			</ul>
+			</div>	
+			<script src="../js/community.js"></script>
+	</div>	
+	<!-- FindFriends Page -->
+	
+	<div id="findFriendsPage" data-role ="page">
+		<div data-role="header" data-theme="c">
+			<h1>Friends</h1>
+		</div><!-- /header -->
+		
+    <!-- start of title -->
+		<div class="row">
+			<div class="small-12 columns">
+				<h1><img class = "center" src="../imgs/Sailor-30x21px.png"></h1>
+			</div>
+		</div>
+				
+		<div class="row">
+			<div class="small-8 columns">Current Friends:</div>
+			<div class="small-4 columns"><p></p></div>
+		</div>
+		
+		<div class="row">
+			<div class="small-8 columns size-12">John, Smith, Mike ...</div>
+			<div class="small-4 columns"><p></p></div>
+		</div>
+		
+		<br/><br>
+
+		
+		<div class="row">
+			<div class="small-12 columns">
+				<input class="" type="search" placeholder="Search">
+			</div>
+		</div>
+		
+		<div>
+			<div id="frienList" class="row">
+			</div>
+		</div>
+		
+		<div id="bottomnav">
+			<ul>
+				<li>
+					<a href="#lifeLinesPage">
+						<img class="bottomIcon" id="ring" src="../imgs/lifeline.png">
+						<br>
+						<section>Life Lines</section>
+					</a>
+				</li>
+				<li>
+					<a href="#encPage">
+						<img class="bottomIcon" id="anchor" src="../imgs/anchor.png">
+						<br>
+						<section>Encouragment</section>
+					</a>
+				</li>
+				<li>
+					<a href="#comPage">
+						<img class="bottomIcon" src="../imgs/sailboat.png">
+						<br>
+						<section>Community</section>
+					</a>
+				</li>
+				<li>
+					<a href="#findFriendsPage">
+						<img class="bottomIcon" src="../imgs/Sailor-30x21px.png">
+						<br>
+						<section>Friends</section>
+					</a>
+				</li>
+				<li>
+					<a href="#settings">
+						<img class="bottomIcon" src="../imgs/gear.png">
+						<br>
+						<section>Settings</section>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script src="../js/friends.js"></script>
+</div>	
+	<!-- Home Page -->
+	
+	<div id="lifeLinesPage" data-role ="page">
+		<div data-role="header" data-theme="c">
+			<h1>Lifelines</h1>
+		</div>
+			 <!-- start of title -->
+		<div class="row">
+			<div class="small-12 center">
+				<h6><img src="../imgs/lifeline.png"></h6>
+			</div>
+		</div>
+
+    <!-- Start of comment area -->
+
+		<div class="row">
+			<div class="small-12 columns size-12">FRIENDS IN NEED:</div>
+		</div>
+		 
+		<div id="friendsInNeedSec"  class="row">
+			<div class="small-1 column">
+			</div>
+		</div>
+		
+		<!--Start of life lines-->
+		<div class="row">
+			<div class="small-12 columns size-12">
+				YOUR RESPONSES:</div>
+		</div>
+		
+		<div id="responseSec" class="row">
+			<div class="small-12 columns">
+			</div>
+		</div>
+		
+		<div id="bottomnav">
+			<ul>
+				<li>
+					<a href="#lifeLinesPage">
+						<img class="bottomIcon" id="ring" src="../imgs/lifeline.png">
+						<br>
+						<section>Life Lines</section>
+					</a>
+				</li>
+				<li>
+					<a href="#encPage">
+						<img class="bottomIcon" id="anchor" src="../imgs/anchor.png">
+						<br>
+						<section>Encouragment</section>
+					</a>
+				</li>
+				<li>
+					<a href="#comPage">
+						<img class="bottomIcon" src="../imgs/sailboat.png">
+						<br>
+						<section>Community</section>
+					</a>
+				</li>
+				<li>
+					<a href="#findFriendsPage">
+						<img class="bottomIcon" src="../imgs/Sailor-30x21px.png">
+						<br>
+						<section>Friends</section>
+					</a>
+				</li>
+				<li>
+					<a href="#settings">
+						<img class="bottomIcon" src="../imgs/gear.png">
+						<br>
+						<section>Settings</section>
+					</a>
+				</li>
+			</ul>
+			</div>
+		<script src="../js/lifeline.js"></script>
+	</div>	
+	<!-- Home Page -->
+	
+	<div id="settings" data-role ="page">
+		<div data-role="header" data-theme="c">
+				<h1>Settings</h1>
+			</div><!-- /header -->
+			<div id="settingArea">
+				<div class="row">
+					<div class="small-12 columns">
+						<h3><img src="../imgs/gear.png"></h3>
+					</div>
+				</div>
+				
+				<div class="row">      
+					<div class="small-6 columns">
+						<p>Unique ID</p>
+					</div>      
+					<div class="small-6 columns">
+						<p> <input id ="settingsUI" placeholder="Unique ID"> </p>
+					</div>
+				</div>
+				
+			<!--- Last name Field-->
+				<div class="row">      
+					<div class="small-6 columns">
+						<p>First Name</p>
+					</div>      
+					<div class="small-6 columns">
+						<p> <input id="settingsFN" placeholder="First Name"> </p>
+					</div>
+				</div>
+				<!--- Unique ID -->
+				<div class="row">      
+					<div class="small-6 columns">
+						<p>Last Name</p>
+					</div>  
+					<div class="small-6 columns">
+						<p> <input id="settingsLN" placeholder="Username"> </p>
+					</div>
+				</div>
+		<!--- Email Field-->
+				<div class="row">      
+					<div class="small-6 columns">
+						<p>Email</p>
+					</div>
+					<div class="small-6 columns">
+						<p> <input id="settingsE" placeholder="Email"> </p>
+					</div>
+				</div>
+			
+				<div class="row">      
+					<div class="small-6 columns">
+						<p>Date Joined:</p>
+					</div>
+					<div class="small-6 columns">
+						<p> <input id="dateJoined" placeholder="09/12/2015"> </p>
+					</div>
+				</div>
+				
+			</div>
+		
+		<div id="bottomnav">
+			<ul>
+				<li>
+					<a href="#lifeLinesPage">
+						<img class="bottomIcon" id="ring" src="../imgs/lifeline.png">
+						<br>
+						<section>Life Lines</section>
+					</a>
+				</li>
+				<li>
+					<a href="#encPage">
+						<img class="bottomIcon" id="anchor" src="../imgs/anchor.png">
+						<br>
+						<section>Encouragment</section>
+					</a>
+				</li>
+				<li>
+					<a href="#comPage">
+						<img class="bottomIcon" src="../imgs/sailboat.png">
+						<br>
+						<section>Community</section>
+					</a>
+				</li>
+				<li>
+					<a href="#findFriendsPage">
+						<img class="bottomIcon" src="../imgs/Sailor-30x21px.png">
+						<br>
+						<section>Friends</section>
+					</a>
+				</li>
+				<li>
+					<a href="#settings">
+						<img class="bottomIcon" src="../imgs/gear.png">
+						<br>
+						<section>Settings</section>
+					</a>
+				</li>
+			</ul>
+			</div>
+		<script src="../js/setting.js"></script>
+	</div>	
+	
+	<div id="sendTo" data-role="page">
+		<div data-role="header" data-theme="c">
+			<h1>Choose Friends</h1>
+		</div><!-- /header -->
+		
+		<br/>
+		
+		<div class="row">
+			<div class="small-12 columns">
+				<p>Which friends do you want to send to?</p>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		
+		<div id="chooseFriendsList" class="row">
+			<div class="row"></div>
+		</div>
+
+				
+				
+		<div id="bottomnav">
+			<ul>
+				<li>
+					<a href="#lifeLinesPage">
+						<img class="bottomIcon" id="ring" src="../imgs/lifeline.png">
+						<br>
+						<section>Life Lines</section>
+					</a>
+				</li>
+				<li>
+					<a href="#encPage">
+						<img class="bottomIcon" id="anchor" src="../imgs/anchor.png">
+						<br>
+						<section>Encouragment</section>
+					</a>
+				</li>
+				<li>
+					<a href="#comPage">
+						<img class="bottomIcon" src="../imgs/sailboat.png">
+						<br>
+						<section>Community</section>
+					</a>
+				</li>
+				<li>
+					<a href="#findFriendsPage">
+						<img class="bottomIcon" src="../imgs/Sailor-30x21px.png">
+						<br>
+						<section>Friends</section>
+					</a>
+				</li>
+				<li>
+					<a href="#settings">
+						<img class="bottomIcon" src="../imgs/gear.png">
+						<br>
+						<section>Settings</section>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+			<div id="lifeLinesPopUp">test</div>
+
+		<script src="../js/addFriendsList.js"></script>
+		
+	</div>
+	<!-- Home Page -->
+	
+	<script src="/writeToDBTest.js"></script>
+</body>
+</html> 

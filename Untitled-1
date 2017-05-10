@@ -1,0 +1,1 @@
+"date"=>$row['date'] , "ownerUniqueID"=>$row['ownerUniqueID'] , "content"=> $row['content'] ,"sentTo"=>$row['sentTo'] ,"responseFlag"=>$row['responseFlag'] , "response"=>$row['response'], "active"=>$row['active'] ,"posVotes"=>$row['posVotes'], "negVotes"=>$row['negVotes']
